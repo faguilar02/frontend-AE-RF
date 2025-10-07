@@ -7,12 +7,13 @@ import {
   PredictBatchRequest,
   PredictBatchResponse,
 } from '../models/predict.models';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PredictService {
-  private readonly apiBase = 'https://backend-ae-rf.onrender.com/api';
+  private readonly apiBase = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
