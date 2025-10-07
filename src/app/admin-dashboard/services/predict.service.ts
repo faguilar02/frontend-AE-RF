@@ -12,7 +12,7 @@ import {
   providedIn: 'root',
 })
 export class PredictService {
-  private readonly apiBase = 'http://localhost:8000/api';
+  private readonly apiBase = 'https://backend-ae-rf.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
